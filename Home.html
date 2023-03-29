@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+</head>
+<body>
+    <form>
+        Text Box  :
+        <input type="text" required /><br />
+        Password :
+        <input type="password" required /> <br />
+        Select Gender :
+        <input type="radio" name="Gender" /> Male
+        <input type="radio" name="Gender" /> FeMale <br />
+        Select Hobbies :
+        <input type="checkbox" name="hobbies" />sports
+        <input type="checkbox" name="hobbies" />music
+        <input type="checkbox" name="hobbies" />trekking
+        <br />
+        Enter Email :
+        <input type="email" /><br />
+        Range Type :
+        <input type="range" min="10" max="100" step="5" /><br />
+        Number Type:
+        <input type="number" min="0" max="100" step="5" value="50"><br />
+        Month Type :
+        <input type="month" min="2020-01" max="2022-12" value="2022-03"><br />
+        Week Type :
+        <input type="week" min="2020-W01" max="2022-W52" value="2022-W12"><br />
+        Datetime Local Type :
+        <input type="datetime-local" min="2022-01-01T12:00" max="2022-12-31T23:59" value="2022-03-20T18:30"><br />
+        URL Type :
+        <input type="url" name="website" placeholder="Enter a valid URL"> <br />
+        File :
+        <input type="file" multiple /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+
+        <address>
+            pune ,
+            maharashtra,
+            india
+        </address>
+        <video controls height="200" width="300">
+            <source src="D:\shreeja pics\VID_20210422_133845.mp4" type="audio/mp4" />
+        </video>
+
+
+        <p>first page</p>
+        <p>second page</p>
+        <p>third page</p>
+
+        <input type="button"value="Apply css" onclick="applycss()" />
+        <script>
+            function applycss() {
+                for (var i = 0; i < 3; i++) {
+                    document.getElementsByTagName("p")[i].style.backgroundColor = "yellow";
+                    document.getElementsByTagName("p")[i].style.color = "red";
+                    document.getElementsByTagName("p")[i].style.fontSize = "20px";
+
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>
